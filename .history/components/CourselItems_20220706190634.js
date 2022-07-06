@@ -1,0 +1,14 @@
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+
+const CourselItems = () => {
+  return (
+    <View>
+      <Text style={tw`w-4/5 h-2/3 bg-green-50 mx-auto`}>CourselItems</Text>
+    </View>
+  );
+};
+
+export default CourselItems;
+
+const styles = StyleSheet.create({});
