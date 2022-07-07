@@ -10,9 +10,6 @@ import React, { useState } from "react";
 import { SafeAreaView } from "react-native";
 import tw from "twrnc";
 import Icon from "react-native-vector-icons/FontAwesome";
-import Icons from "../components/Icons";
-import { testData } from "../data/Data";
-import Carousel from "../components/Carousel";
 
 const logo = "https://ugv.edu.bd/images/webimage/ugv-logo.png";
 
@@ -32,9 +29,28 @@ const HomeScreen = () => {
         />
       </View>
 
-      <Icons />
       <View
-        style={tw`w-5/6 mx-auto h-10 rounded-lg my-4 border-2 border-blue-200 p-2 flex flex-row items-center`}
+        style={tw`w-full flex flex-row justify-around pt-2 bg-transparent `}
+      >
+        <Icon name="home" type="fontawesome" size={25} color="blue" />
+        <Icon
+          name="graduation-cap"
+          type="fontawesome"
+          size={25}
+          color="darkblue"
+        />
+        <Icon name="book" type="fontawesome" size={25} color="darkblue" />
+        <Icon name="info" type="fontawesome" size={25} color="darkblue" />
+        <Icon
+          name="user-circle-o"
+          type="fontawesome"
+          size={25}
+          color="darkblue"
+        />
+        <Icon name="navicon" type="fontawesome" size={25} color="darkblue" />
+      </View>
+      <View
+        style={tw`w-5/6 mx-auto h-10 bg-gray-50 rounded-lg my-4 border-2 border-blue-200 p-2 flex flex-row items-center`}
       >
         <Icon
           name="search"
@@ -49,7 +65,6 @@ const HomeScreen = () => {
           setTextInputValue={() => value}
         ></TextInput>
       </View>
-      <Carousel data={testData} />
     </SafeAreaView>
   );
 };

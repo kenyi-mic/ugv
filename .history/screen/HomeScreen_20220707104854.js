@@ -11,8 +11,7 @@ import { SafeAreaView } from "react-native";
 import tw from "twrnc";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Icons from "../components/Icons";
-import { testData } from "../data/Data";
-import Carousel from "../components/Carousel";
+import { CarouselItems } from "../components/CarouselItems";
 
 const logo = "https://ugv.edu.bd/images/webimage/ugv-logo.png";
 
@@ -34,7 +33,7 @@ const HomeScreen = () => {
 
       <Icons />
       <View
-        style={tw`w-5/6 mx-auto h-10 rounded-lg my-4 border-2 border-blue-200 p-2 flex flex-row items-center`}
+        style={tw`w-5/6 mx-auto h-10 bg-gray-50 rounded-lg my-4 border-2 border-blue-200 p-2 flex flex-row items-center`}
       >
         <Icon
           name="search"
@@ -49,7 +48,9 @@ const HomeScreen = () => {
           setTextInputValue={() => value}
         ></TextInput>
       </View>
-      <Carousel data={testData} />
+      <View>
+        <CarouselItems />
+      </View>
     </SafeAreaView>
   );
 };
