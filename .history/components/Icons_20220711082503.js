@@ -6,7 +6,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 const Icons = () => {
   return (
     <View>
-      <View style={tw`w-full flex flex-row justify-around pt-2 bg-white p-3 `}>
+      <View style={tw`w-full flex flex-row justify-around pt-2 bg-white `}>
         <Icon name="home" type="fontawesome" size={25} color="blue" />
         <Icon
           name="graduation-cap"

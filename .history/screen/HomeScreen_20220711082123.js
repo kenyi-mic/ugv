@@ -18,7 +18,7 @@ const HomeScreen = () => {
   const [textInputValue, setTextInputValue] = useState(null);
   return (
     <SafeAreaView style={styles.homeScreen}>
-      <View style={tw`bg-gray-100`}>
+      <View style={tw`bg-white`}>
         <Image
           style={tw`mx-auto`}
           resizeMode="contain"
